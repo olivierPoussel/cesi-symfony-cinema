@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+	<h1>Liste d'acteur</h1>
+	<ul>
+		{% for acteur in acteurs %}
+			<li>{{acteur.id}}
+				{{acteur.nom}}
+				{{acteur.prenom}}</li>
+		{% endfor %}
+	</ul>
+
+{% endblock %}
