@@ -43,7 +43,7 @@ class ActeurController extends AbstractController
     {
         // $idActeur = $request->get('id');
         // $acteur = $acteurRepository->find($id);
-
+        // dump($acteur);
         return $this->render('acteur/acteur.html.twig', [
             'acteur' => $acteur,
         ]);

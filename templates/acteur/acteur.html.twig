@@ -11,5 +11,11 @@
 		<li>nom :
 			{{acteur.nom}}</li>
 	</ul>
+	<h2>Roles</h2>
+	<ul>
+		{% for role in acteur.roles %}
+			<li>{{role.nom}}</li>
+		{% endfor %}
+	</ul>
 	<a href="{{path('home')}}">Retour</a>
 {% endblock %}
