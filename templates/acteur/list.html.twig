@@ -7,7 +7,10 @@
 		{% for acteur in acteurs %}
 			<li>{{acteur.id}}
 				{{acteur.nom}}
-				{{acteur.prenom}}</li>
+				{{acteur.prenom}}
+
+				<a href="{{ path('acteur_detail', {id: acteur.id}) }}">En savoir plus</a>
+			</li>
 		{% endfor %}
 	</ul>
 

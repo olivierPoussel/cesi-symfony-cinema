@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+	<h1>{{ acteur.prenom ~' '~ acteur.nom }}</h1>
+
+	<ul>
+		<li>id :
+			{{acteur.id}}</li>
+		<li>prenom :
+			{{acteur.prenom}}</li>
+		<li>nom :
+			{{acteur.nom}}</li>
+	</ul>
+	<a href="{{path('home')}}">Retour</a>
+{% endblock %}
